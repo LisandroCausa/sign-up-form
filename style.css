@@ -87,4 +87,12 @@ label {
 input {
 	padding: 2px;
 	font-size: 1rem;
+	outline: none !important;
+}
+
+input:focus {
+	outline: none !important;
+	border: 2px solid blue;
+	border-radius: 2px;
+	color: rgb(100, 100, 100);
 }
