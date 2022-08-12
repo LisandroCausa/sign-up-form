@@ -1,3 +1,8 @@
+@font-face {
+	font-family: companyNameFont;
+	src: url(./Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
 :root{
 	--main-font-family: Verdana, Geneva, Tahoma, sans-serif;
 	--content-left-margin: calc(6px + 2vw);
@@ -9,6 +14,8 @@
 
 body {
 	display: flex;
+	width: 100vw;
+	height: 100vh;
 }
 
 img {
@@ -95,4 +102,48 @@ input:focus {
 	border: 2px solid blue;
 	border-radius: 2px;
 	color: rgb(100, 100, 100);
+}
+
+#brand-section {
+	background-image: url("./img/photo.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 45vw;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#logo-section {
+	width: auto;
+	background-color: rgba(71, 71, 71, 0.486);
+	padding: 32px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20vh;
+}
+
+#logo-section > img {
+	width: 75px;
+	height: 75px;
+	filter: invert(100%);
+}
+
+#logo-section > h1 {
+	font-size: 3.75rem;
+	color: rgb(255, 255, 255);
+	font-family: companyNameFont;
+	font-weight: 100;
+}
+
+#brand-section > p {
+	color: white;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: 6px;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+	color: white;
 }
